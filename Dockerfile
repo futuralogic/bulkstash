@@ -1,8 +1,7 @@
-FROM alpine:3.12
-MAINTAINER Thomas Spicer <thomas@openbridge.com>
+FROM alpine:latest
 
-ARG RCLONE_VERSION="current"
-ARG RCLONE_TYPE="amd64"
+ARG RCLONE_VERSION="1.54.0"
+ARG RCLONE_TYPE="arm-v7"
 ENV BUILD_DEPS \
       wget \
       linux-headers \
